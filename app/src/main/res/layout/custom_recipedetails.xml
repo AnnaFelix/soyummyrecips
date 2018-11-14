@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/fragment_details_of_recipe">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewgallery_main"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/frame_foodbg"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout_gallery"
+            android:layout_width="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/imageViewgallery_main"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5">
+
+                <ImageView
+                    android:id="@+id/imageViewgallery"
+                    android:layout_width="@dimen/size_gallery_icon"
+                    android:layout_height="@dimen/size_gallery_icon"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/video" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5">
+
+                <ImageView
+                    android:id="@+id/imageViewvideo"
+                    android:layout_width="@dimen/size_gallery_icon"
+                    android:layout_height="@dimen/size_gallery_icon"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/ic_local_movies_black_24dp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_gallery">
+
+            <LinearLayout
+                android:id="@+id/layout_recipelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_betweenelements"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Title" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_betweenelements"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="6"
+                        android:gravity="top"
+                        android:hint="Details" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

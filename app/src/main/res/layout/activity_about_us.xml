@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef">
+
+
+
+    <RelativeLayout
+        android:id="@+id/activity_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/frame">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_betweenelements"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_headding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_title" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_headding"
+                android:layout_marginTop="@dimen/margin_betweenelements"
+                android:text="@string/aboutus"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_title" />
+        </LinearLayout>
+        <!-- Adding bottom sheet after main content -->
+
+    </RelativeLayout>
+    <!-- Adding bottom sheet after main content -->
+    <include layout="@layout/content_privactpolicy" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "752597879379",
+    "firebase_url": "https://soyummyrecips-c04c1.firebaseio.com",
+    "project_id": "soyummyrecips-c04c1",
+    "storage_bucket": "soyummyrecips-c04c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752597879379:android:1b6c89c4e2632065",
+        "android_client_info": {
+          "package_name": "com.soyummyrecips.anna.soyummyrecipes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752597879379-hd1aamr14knftrl68ts83840ojmqghf7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.soyummyrecips.anna.soyummyrecipes",
+            "certificate_hash": "7081e293a72bf91d6a7beefbcfaa0b067da33f6f"
+          }
+        },
+        {
+          "client_id": "752597879379-it6lt9lsuhgq3g9ftknj72rh424vftj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_6a1dApr4oRyw9inR1Jz45ohPhQ92DwU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752597879379-it6lt9lsuhgq3g9ftknj72rh424vftj2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
